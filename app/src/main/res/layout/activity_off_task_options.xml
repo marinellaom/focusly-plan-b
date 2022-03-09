@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_one"
+    tools:context=".OffTaskOptionsActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-15dp">
+
+    <TextView
+        android:id="@+id/optionlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Choose your off-task activities!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/eat_button"
+        android:layout_width="301dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="204dp"
+        android:background="@color/white"
+        android:text="EAT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F6A9bD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music_button"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/music_button"
+        android:layout_width="301dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
+        android:text="PLAY MUSIC"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F6A9bD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionlabel"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/walk_button"
+        android:layout_width="301dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="WALK"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F6A9bD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music_button"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/stretch_button"
+        android:layout_width="301dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/white"
+        android:text="STRETCH"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F6A9bD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music_button"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

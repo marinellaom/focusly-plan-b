@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6e7ec"
+    tools:context=".SetTaskTimerActivity">
+
+    <Button
+        android:id="@+id/back"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="107dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/back_button"
+        android:onClick="goBack"
+        android:text="back"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F6A9BD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_button"
+        app:layout_constraintVertical_bias="0.595" />
+
+    <Button
+        android:id="@+id/set_button"
+        android:layout_width="265dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="72dp"
+        android:background="@drawable/rounded_corners"
+        android:text="SET"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFEBB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
+
+    <EditText
+        android:id="@+id/taskname"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="267dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="72dp"
+        android:editable="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="SET YOUR TASK HERE"
+        android:inputType="textLongMessage|text"
+        android:maxLength="20"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#837B86"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/on_spinner"
+        android:layout_width="334dp"
+        android:layout_height="66dp"
+        android:background="@drawable/style_spinner"
+        android:textColor="#F6A9bD"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON TASK TIMER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#D8B8D9"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF TASK TIMER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#D8B8D9"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.471" />
+
+    <Spinner
+        android:id="@+id/off_spinner"
+        android:layout_width="334dp"
+        android:layout_height="66dp"
+        android:background="@drawable/style_spinner"
+        android:textColor="#F6A9bD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="68dp"
+        android:background="#f6e7ec"
+        app:layout_constraintEnd_toStartOf="@+id/taskname"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/note_icon" />
+
+    <!--    <NumberPicker-->
+<!--        android:id="@+id/pickNum"-->
+<!--        android:layout_width="164dp"-->
+<!--        android:layout_height="152dp"-->
+<!--        android:layout_marginStart="80dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtView" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

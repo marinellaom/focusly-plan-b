@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9E4F2"
+    tools:context=".OffContinueActivity">
+
+    <!--    <Button-->
+    <!--        android:id="@+id/overview_btn"-->
+    <!--        android:layout_width="320dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="416dp"-->
+    <!--        android:background="#F6A9bD"-->
+    <!--        android:text="OVERVIEW"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+    <!--        android:textColor="#FFFEBB"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.494"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <Button
+        android:id="@+id/set_new_task_btn"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="432dp"
+        android:background="#F6A9bD"
+        android:text="SET NEW TASK"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFEBB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/off_cont_button"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="340dp"
+        android:background="#F6A9bD"
+        android:text="EXTEND OFF TASK"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFEBB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/off_continue_btn"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="248dp"
+        android:background="#F6A9bD"
+        android:text=" CONTINUE ON TASK"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFEBB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
