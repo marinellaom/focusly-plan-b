@@ -92,7 +92,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.396"
-        app:srcCompat="@drawable/ic_music"
+        app:srcCompat="@mipmap/ic_spotify_foreground"
         tools:ignore="VectorDrawableCompat" />
 
 

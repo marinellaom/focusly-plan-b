@@ -9,6 +9,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -18,7 +19,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.Locale;
 
 public class MusicActivity extends AppCompatActivity {
@@ -39,7 +39,7 @@ public class MusicActivity extends AppCompatActivity {
     // SOUNDS
     private ImageView natureSounds;
     private ImageView pianoSounds;
-    private ImageView localMusicFile;
+    private ImageView spotify;
 
 
     @Override
@@ -91,16 +91,24 @@ public class MusicActivity extends AppCompatActivity {
             }
         });
 
-
-        localMusicFile = (ImageView) findViewById(R.id.localmusic_button);
-        localMusicFile.setOnClickListener(new View.OnClickListener() {
+        spotify = (ImageView) findViewById(R.id.localmusic_button);
+        spotify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(Intent.ACTION_GET_CONTENT);
-                in.setType("*/*");
-                startActivityForResult(in, 1);
+                gotoURL("https://open.spotify.com/episode/2nYaI7vGXMJjcw0Jmb9FM3");
             }
         });
+
+//        localMusicFile = (ImageView) findViewById(R.id.localmusic_button);
+//        localMusicFile.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent in = new Intent(Intent.ACTION_GET_CONTENT);
+//                in.setType("*/*");
+//                startActivityForResult(in, 1);
+//            }
+//        });
+
 
 
         // START BUTTON
@@ -128,6 +136,10 @@ public class MusicActivity extends AppCompatActivity {
 
     }
 
+    private void gotoURL(String s) {
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW, uri));
+    }
 
 
     /*---- COUNTDOWN | START PAUSE BUTTON ----*/
