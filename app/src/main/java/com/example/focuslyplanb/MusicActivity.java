@@ -99,17 +99,6 @@ public class MusicActivity extends AppCompatActivity {
             }
         });
 
-//        localMusicFile = (ImageView) findViewById(R.id.localmusic_button);
-//        localMusicFile.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent in = new Intent(Intent.ACTION_GET_CONTENT);
-//                in.setType("*/*");
-//                startActivityForResult(in, 1);
-//            }
-//        });
-
-
 
         // START BUTTON
         startCountdownTimer.setOnClickListener(new View.OnClickListener() {
@@ -175,20 +164,6 @@ public class MusicActivity extends AppCompatActivity {
         updateTimeInterface();
     }
 
-    /*---- RESET COUNTDOWN TIMER ----*/
-    public void resetTimer(){
-
-        taskCountdownTimer.cancel();
-        timeLeft = GlobalVariable.OnTimer * 60000;
-        int minutes = (int) ((timeLeft/1000)%3600)/60;
-        int seconds = (int) (timeLeft/1000)%60;
-
-        String timeLeftDisplay = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
-        OffTaskTimer.setText(timeLeftDisplay);
-
-        updateTimeInterface();
-
-    }
 
     /*---- UPDATE COUNTDOWN TEXT DISPLAY ----*/
     public void updateCountdownText(){
@@ -223,7 +198,7 @@ public class MusicActivity extends AppCompatActivity {
 
                 /*----DEFAULT TIME----*/
                 taskCountdownTimer.cancel();
-                timeLeft = GlobalVariable.OnTimer * 60000;
+                timeLeft = GlobalVariable.OffTimer * 60000;
                 int minutes = (int) ((timeLeft/1000)%3600)/60;
                 int seconds = (int) (timeLeft/1000)%60;
 
@@ -290,7 +265,7 @@ public class MusicActivity extends AppCompatActivity {
 
                 if(isTimerRunning){
                     taskCountdownTimer.cancel();
-                    timeLeft = GlobalVariable.OnTimer * 60000;
+                    timeLeft = GlobalVariable.OffTimer * 60000;
                     int minutes = (int) ((timeLeft/1000)%3600)/60;
                     int seconds = (int) (timeLeft/1000)%60;
 

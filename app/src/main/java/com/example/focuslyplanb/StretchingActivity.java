@@ -180,7 +180,7 @@ public class StretchingActivity extends AppCompatActivity {
 
                 /*----DEFAULT TIME----*/
                 taskCountdownTimer.cancel();
-                timeLeft = GlobalVariable.OnTimer * 60000;
+                timeLeft = GlobalVariable.OffTimer * 60000;
                 int minutes = (int) ((timeLeft/1000)%3600)/60;
                 int seconds = (int) (timeLeft/1000)%60;
 
@@ -190,7 +190,6 @@ public class StretchingActivity extends AppCompatActivity {
                 /*---- PROCEEDS TO NEXT PAGE IF TIMER IS DONE----*/
                 Intent in = new Intent(StretchingActivity.this, OffContinueActivity.class);
                 startActivity(in);
-
             }
         }
     }
@@ -248,7 +247,7 @@ public class StretchingActivity extends AppCompatActivity {
 
                 if(isTimerRunning){
                     taskCountdownTimer.cancel();
-                    timeLeft = GlobalVariable.OnTimer * 60000;
+                    timeLeft = GlobalVariable.OffTimer * 60000;
                     int minutes = (int) ((timeLeft/1000)%3600)/60;
                     int seconds = (int) (timeLeft/1000)%60;
 

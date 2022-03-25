@@ -172,27 +172,13 @@ public class EatActivity extends AppCompatActivity {
         updateTimeInterface();
     }
 
-    /*---- RESET COUNTDOWN TIMER ----*/
-    public void resetTimer() {
-
-        taskCountdownTimer.cancel();
-        timeLeft = GlobalVariable.OnTimer * 60000;
-        int minutes = (int) ((timeLeft / 1000) % 3600) / 60;
-        int seconds = (int) (timeLeft / 1000) % 60;
-
-        String timeLeftDisplay = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
-        OffTaskTimer.setText(timeLeftDisplay);
-
-        updateTimeInterface();
-    }
-
 
     /*---- UPDATE COUNTDOWN TEXT DISPLAY ----*/
-    public void updateCountdownText() {
+    public void updateCountdownText(){
 //        taskCountdownTimer.cancel();
 //        timeLeft = GlobalVariable.OnTimer * 60000;
-        int minutes = (int) ((timeLeft / 1000) % 3600) / 60;
-        int seconds = (int) (timeLeft / 1000) % 60;
+        int minutes = (int) ((timeLeft/1000)%3600)/60;
+        int seconds = (int) (timeLeft/1000)%60;
 
         String timeLeftDisplay = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
         OffTaskTimer.setText(timeLeftDisplay);
@@ -217,21 +203,21 @@ public class EatActivity extends AppCompatActivity {
             breathingExercise.setVisibility(View.VISIBLE);
 
 
-        if (timeLeft < 1000) {
+            if (timeLeft < 1000){
 
-            /*----DEFAULT TIME----*/
-            taskCountdownTimer.cancel();
-            timeLeft = GlobalVariable.OnTimer * 60000;
-            int minutes = (int) ((timeLeft/1000)%3600)/60;
-            int seconds = (int) (timeLeft/1000)%60;
+                /*----DEFAULT TIME----*/
+                taskCountdownTimer.cancel();
+                timeLeft = GlobalVariable.OffTimer * 60000;
+                int minutes = (int) ((timeLeft/1000)%3600)/60;
+                int seconds = (int) (timeLeft/1000)%60;
 
-            String timeLeftDisplay = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
-            OffTaskTimer.setText(timeLeftDisplay);
+                String timeLeftDisplay = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
+                OffTaskTimer.setText(timeLeftDisplay);
 
-            /*---- PROCEEDS TO NEXT PAGE IF TIMER IS DONE----*/
-            Intent in = new Intent(EatActivity.this, OffContinueActivity.class);
-            startActivity(in);
-        }
+                /*---- PROCEEDS TO NEXT PAGE IF TIMER IS DONE----*/
+                Intent in = new Intent(EatActivity.this, OffContinueActivity.class);
+                startActivity(in);
+            }
     }
 
 }
@@ -287,7 +273,7 @@ public class EatActivity extends AppCompatActivity {
 
                 if(isTimerRunning){
                     taskCountdownTimer.cancel();
-                    timeLeft = GlobalVariable.OnTimer * 60000;
+                    timeLeft = GlobalVariable.OffTimer * 60000;
                     int minutes = (int) ((timeLeft/1000)%3600)/60;
                     int seconds = (int) (timeLeft/1000)%60;
 

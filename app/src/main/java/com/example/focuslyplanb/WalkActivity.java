@@ -208,7 +208,7 @@ public class WalkActivity extends AppCompatActivity {
 //                timeLeft = startTimeInput;
 //                updateCountdownText();
                 taskCountdownTimer.cancel();
-                timeLeft = GlobalVariable.OnTimer * 60000;
+                timeLeft = GlobalVariable.OffTimer * 60000;
                 int minutes = (int) ((timeLeft/1000)%3600)/60;
                 int seconds = (int) (timeLeft/1000)%60;
 
@@ -272,7 +272,7 @@ public class WalkActivity extends AppCompatActivity {
 
                 if(isTimerRunning){
                     taskCountdownTimer.cancel();
-                    timeLeft = GlobalVariable.OnTimer * 60000;
+                    timeLeft = GlobalVariable.OffTimer * 60000;
                     int minutes = (int) ((timeLeft/1000)%3600)/60;
                     int seconds = (int) (timeLeft/1000)%60;
 
