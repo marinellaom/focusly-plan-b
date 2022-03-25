@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -15,7 +16,8 @@ import android.widget.ToggleButton;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    ToggleButton wifi, sound;
+    ToggleButton sound;
+    Button wifi;
     AudioManager audioManager;
 
     @Override
@@ -29,23 +31,11 @@ public class SettingsActivity extends AppCompatActivity {
 
 
         //AUTOMATICALLY OPEN WIFI SETTINGS FOR MANUAL DISABLING OF WIFI
-        wifi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-
+        wifi.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked)
-                {
-                    Intent settingsIntent = new Intent(Settings.Panel.ACTION_INTERNET_CONNECTIVITY);
-                    startActivity(settingsIntent);
-
-                }
-                else
-                {
-                    Intent settingsIntent = new Intent(Settings.Panel.ACTION_INTERNET_CONNECTIVITY);
-                    startActivity(settingsIntent);
-
-                }
-
+            public void onClick(View view) {
+                Intent settingsIntent = new Intent(Settings.Panel.ACTION_INTERNET_CONNECTIVITY);
+                startActivity(settingsIntent);
             }
         });
 

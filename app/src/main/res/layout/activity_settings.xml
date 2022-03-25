@@ -50,14 +50,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ToggleButton
+    <Button
         android:id="@+id/wifi_switch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="92dp"
+        android:layout_height="47dp"
         android:layout_marginTop="152dp"
-        android:text="ToggleButton"
-        android:textOff="WiFi OFF"
-        android:textOn="WiFi ON"
+        android:text="DISABLE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.919"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,8 +63,8 @@
 
     <ToggleButton
         android:id="@+id/sound_switch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="94dp"
+        android:layout_height="47dp"
         android:layout_marginTop="220dp"
         android:text="ToggleButtonSound"
         android:textOff="MUTE"
