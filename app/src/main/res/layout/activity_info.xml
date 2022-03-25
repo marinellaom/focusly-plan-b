@@ -23,15 +23,16 @@
 
     <TextView
         android:id="@+id/title_info4"
-        android:layout_width="309dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="128dp"
+        android:layout_width="376dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="100dp"
         android:gravity="center"
-        android:text="Developed by Anne Ginelle Dumawal, Marinella Moral, Trisha Mae Rabaca, and Jhon Carlo Bitay - 2022"
+        android:text="App Developed by Marinella Moral, Trisha Mae Rabaca, Ginelle Dumawal and Jhon Carlo Bitay - 2022"
         android:textColor="@color/white"
-        android:textSize="18dp"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
