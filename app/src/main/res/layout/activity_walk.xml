@@ -8,33 +8,6 @@
     tools:context=".OnTaskActivity">
 
 
-    <!--    <com.smarteist.autoimageslider.SliderView-->
-<!--        android:id="@+id/walk_slider"-->
-<!--        android:layout_width="320dp"-->
-<!--        android:layout_height="190dp"-->
-<!--        android:scaleType="centerCrop"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.511"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.435"-->
-<!--        app:sliderAnimationDuration="1000"-->
-<!--        app:sliderAutoCycleDirection="back_and_forth"-->
-<!--        app:sliderAutoCycleEnabled="true"-->
-<!--        app:sliderIndicatorAnimationDuration="1000"-->
-<!--        app:sliderIndicatorGravity="center_horizontal|bottom"-->
-<!--        app:sliderIndicatorMargin="15dp"-->
-<!--        app:sliderIndicatorOrientation="horizontal"-->
-<!--        app:sliderIndicatorPadding="3dp"-->
-<!--        app:sliderIndicatorRadius="2dp"-->
-<!--        app:sliderIndicatorSelectedColor="#5a5a5a"-->
-<!--        app:sliderScrollTimeInSec="20"-->
-<!--        app:sliderStartAutoCycle="true"-->
-<!--        tools:ignore="MissingConstraints">-->
-
-<!--    </com.smarteist.autoimageslider.SliderView>-->
-
 
     <ImageView
         android:id="@+id/image_display"
@@ -154,7 +127,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="tensed"
+        android:text="tense"
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.62"

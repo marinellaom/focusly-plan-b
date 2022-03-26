@@ -7,28 +7,6 @@
     android:background="#F6E7EC"
     tools:context=".OnTaskActivity">
 
-<!--    <Button-->
-<!--        android:id="@+id/button_reset"-->
-<!--        android:layout_width="74dp"-->
-<!--        android:layout_height="43dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:adjustViewBounds="true"-->
-<!--        android:background="@drawable/back_button"-->
-<!--        android:padding="10dp"-->
-<!--        android:scaleType="fitCenter"-->
-<!--        android:text="RESET"-->
-<!--        android:textSize="12dp"-->
-<!--        android:textColor="#F6A9bD"-->
-<!--        android:visibility="invisible"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.955"-->
-<!--        tools:ignore="SpeakableTextPresentCheck"-->
-<!--        tools:visibility="visible" />-->
-
 
     <TextView
         android:id="@+id/text_label3"
@@ -149,7 +127,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="tensed"
+        android:text="tense"
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.618"
