@@ -25,14 +25,14 @@
         android:id="@+id/title_info4"
         android:layout_width="376dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginBottom="252dp"
         android:gravity="center"
-        android:text="App Developed by Marinella Moral, Trisha Mae Rabaca, Ginelle Dumawal and Jhon Carlo Bitay - 2022"
+        android:text="App Developed by Marinella Moral, Trisha Mae Rabaca, Ginelle Dumawal and John Carlo Bitay (2022)"
         android:textColor="@color/white"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -40,7 +40,7 @@
         android:layout_width="362dp"
         android:layout_height="204dp"
         android:gravity="center"
-        android:text="Focusly is a combination of an android application and a hardware device. It's a research prototype for those who wish to reduce their stress and be more productive while working. The user has control over their time. This is why it's also labeled as a &quot;momentum builder&quot; app."
+        android:text="Focusly is a combination of an android application and a hardware device. A research prototype that help reduce stress and distractions. Helps in maintaining focus and momentum. It can also detect user's pulse rate and skin conductance"
         android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"

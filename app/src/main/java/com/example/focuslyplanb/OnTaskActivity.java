@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
@@ -188,6 +189,10 @@ public class OnTaskActivity extends AppCompatActivity {
                 /*----DEFAULT TIME----*/
                 timeLeft = startTimeInput;
                 updateCountdownText();
+
+                /*----FINISHED TIMER ALARM----*/
+                final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.timersound);
+                mediaPlayer.start();
 
                 /*---- PROCEEDS TO NEXT PAGE IF TIMER IS DONE----*/
                 Intent in = new Intent(OnTaskActivity.this, ContinueActivity.class);

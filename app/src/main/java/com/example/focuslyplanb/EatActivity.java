@@ -205,6 +205,10 @@ public class EatActivity extends AppCompatActivity {
 
             if (timeLeft < 1000){
 
+                /*----FINISHED TIMER ALARM----*/
+                final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.timersound);
+                mediaPlayer.start();
+
                 /*----DEFAULT TIME----*/
                 taskCountdownTimer.cancel();
                 timeLeft = GlobalVariable.OffTimer * 60000;

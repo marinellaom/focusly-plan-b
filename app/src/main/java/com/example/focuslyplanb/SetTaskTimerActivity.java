@@ -34,8 +34,8 @@ public class SetTaskTimerActivity extends AppCompatActivity{
         taskName = (EditText) findViewById(R.id.taskname);
 
         //DEFAULT TIME LIST
-        Integer[] ontime = new Integer[]{15, 20, 25, 30, 35, 40, 45};
-        Integer[] offtime = new Integer[]{10, 15, 20, 25, 30};
+        Integer[] ontime = new Integer[]{1, 15, 20, 25, 30, 35, 40, 45};
+        Integer[] offtime = new Integer[]{1, 10, 15, 20, 25, 30};
 
         //ADAPTER describes how the items (time list) are displayed
         ArrayAdapter<Integer> OnAdapter = new ArrayAdapter<>(this, R.layout.spinner_text_layout,  ontime);

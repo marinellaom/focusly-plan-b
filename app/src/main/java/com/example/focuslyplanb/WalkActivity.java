@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -203,6 +204,10 @@ public class WalkActivity extends AppCompatActivity {
 
 
             if (timeLeft < 1000){
+
+                /*----FINISHED TIMER ALARM----*/
+                final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.timersound);
+                mediaPlayer.start();
 
                 /*----DEFAULT TIME----*/
 //                timeLeft = startTimeInput;
