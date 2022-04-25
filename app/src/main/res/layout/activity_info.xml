@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
-        android:text="ABOUT FOCUSLY > "
+        android:text="ABOUT 2TOK > "
         android:textColor="#c27ba0"
         android:textSize="20dp"
         android:textStyle="normal"
